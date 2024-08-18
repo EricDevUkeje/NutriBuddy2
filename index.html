@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriBuddy - Your Personal Nutrition and Fitness Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>NutriBuddy</h1>
+        <button id="subscribeBtn">Subscribe to our newsletter</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Welcome to <span class="highlight">NutriBuddy</span> - Your Personal Nutrition and Fitness Guide!</h2>
+                <p>Eating healthy and staying fit just got easier. NutriBuddy is your go-to app for discovering the nutritional value of your favorite foods and understanding exactly what it takes to burn those calories. Whether you're counting carbs, tracking protein, or planning your next workout, NutriBuddy provides the insights you need to make informed decisions. Start your journey towards a healthier lifestyle today - because your wellbeing matters!</p>
+            </div>
+            <div class="hero-image">
+                <img src="hero-image.jpg" alt="Woman preparing healthy food">
+            </div>
+        </section>
+
+        <section class="nutrition-check">
+            <h3>What food would you like to check today?</h3>
+            <div class="input-group">
+                <input type="text" id="foodInput" placeholder="What is the food you plan to eat or check?">
+                <input type="text" id="amountInput" placeholder="Amount per Serving?">
+                <button id="checkNutritionBtn">Get Nutritional Facts Now!</button>
+            </div>
+        </section>
+
+        <section class="nutrition-facts" id="nutritionFacts" style="display: none;">
+            <div class="fact">
+                <h4>Calories</h4>
+                <p id="calories">0 kcal</p>
+            </div>
+            <div class="fact">
+                <h4>Protein</h4>
+                <p id="protein">0g</p>
+            </div>
+            <div class="fact">
+                <h4>Fat</h4>
+                <p id="fat">0g</p>
+            </div>
+            <div class="fact">
+                <h4>Carbohydrates</h4>
+                <p id="carbs">0g</p>
+            </div>
+            <div class="fact">
+                <h4>Fiber</h4>
+                <p id="fiber">0g</p>
+            </div>
+            <div class="fact">
+                <h4>Sugar</h4>
+                <p id="sugar">0g</p>
+            </div>
+        </section>
+
+        <section class="exercise-recommendations" id="exerciseRecommendations" style="display: none;">
+            <h3>Exercise to burn Calories</h3>
+            <p>To burn calories, you will perform one of these activities:</p>
+            <div class="exercise-list" id="exerciseList"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

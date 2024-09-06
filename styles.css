@@ -20,6 +20,37 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 30px; /* Set the desired font size */
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect - Purple Color */
+nav ul li a:hover {
+    color: #800080; /* Purple Color */
+    text-decoration: underline;
+}
+
 button {
     background-color: #330447;
     color: white;
@@ -29,6 +60,7 @@ button {
     cursor: pointer;
     font-family: 'Space Grotesk', sans-serif;
 }
+
 
 main {
     max-width: 1200px;
